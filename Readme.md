@@ -10,21 +10,30 @@ React VR example app for cordova
     $ npm install -g cordova
     ```
     
-2. Add Platforms
+1. Add platforms
 
     ```
     $ cordova platform add ios --save
     $ cordova platform add android --save
     ```
-    
-3. Build
+
+1. Install dependencies
 
     ```
+    $ cd react_vr
+    $ npm install
+    ```
+    
+1. Build
+
+    ```
+    $ npm run bundle
+    $ cd ../
     $ cordova build ios
     $ cordova build android
     ```
     
-4. Run by emulator
+1. Run by emulator
 
     ```
     $ cordova emulate ios
