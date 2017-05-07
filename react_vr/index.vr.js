@@ -12,7 +12,12 @@ export default class react_vr extends React.Component {
   render() {
     return (
       <View>
-        <Pano source={asset('tsujido-house-pano.jpg')}/>
+        <Pano source={asset('tsujido-house-pano.jpg')}
+          style={{
+            transform: [
+              {rotateY : 0}
+            ] }}
+        />
         <Text
           style={{
             backgroundColor: '#777879',
