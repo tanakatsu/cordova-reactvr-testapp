@@ -12,16 +12,19 @@ export default class react_vr extends React.Component {
   render() {
     return (
       <View>
+        {/*
         <Pano source={asset('tsujido-house-pano.jpg')}
+        */}
+        <Pano source={asset('unifa_office_sv_pano.jpg')}
           style={{
             transform: [
-              {rotateY : 0}
+              {rotateY : -90}
             ] }}
         />
         <Text
           style={{
-            backgroundColor: '#777879',
-            fontSize: 0.8,
+            backgroundColor: '#77ff79',
+            fontSize: 0.5,
             layoutOrigin: [0.5, 0.5],
             paddingLeft: 0.2,
             paddingRight: 0.2,
@@ -29,7 +32,7 @@ export default class react_vr extends React.Component {
             textAlignVertical: 'center',
             transform: [{translate: [0, 0, -3]}],
           }}>
-          hello
+          Welcome to Unifa
         </Text>
       </View>
     );
